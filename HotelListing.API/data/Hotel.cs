@@ -9,7 +9,7 @@ namespace HotelListing.API.data
         public int Id { get; set; }
         public string Name { get; set; }
         public string Address { get; set; }
-        public int rating { get; set; }
+        public int Rating { get; set; }
         
         [ForeignKey(nameof(CountryId))]
         public int CountryId { get; set; }

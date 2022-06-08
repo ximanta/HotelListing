@@ -34,7 +34,7 @@ namespace HotelListing.API.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("countryCode")
+                    b.Property<string>("CountryCode")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -59,7 +59,7 @@ namespace HotelListing.API.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("rating")
+                    b.Property<int>("Rating")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
