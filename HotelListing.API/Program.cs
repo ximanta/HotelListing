@@ -1,5 +1,6 @@
 
 
+using HotelListing.API.config;
 using HotelListing.API.data;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
@@ -24,7 +25,7 @@ options.AddPolicy("AllowAll",
 });
 
 builder.Host.UseSerilog((ctx, lc) => lc.WriteTo.Console().ReadFrom.Configuration(ctx.Configuration));
-
+builder.Services.AddAutoMapper(typeof(MapperConfig));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

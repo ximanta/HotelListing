@@ -16,4 +16,18 @@ Code First Entity Framework
 	Create entities
 	Create DbContext
 	Perform migration
+		add-migration <InitialMigration>
+		update-database
 	Seed Data in DbContext
+	  update-database
+	  Update-Database -TargetMigration:"name_of_migration"
+	Perform scaffolding of controlle and action
+	Test with POSTMAN and Swagger
+	Create DTO and use Auto Mapper
+		Nuget AutoMapper.Extensions.Microsoft.DependencyInjection
+		Create Incomming and Outgoing DTOs
+		Create MapperConfig
+		Register MapperConfig to builder service (Program.cs)
+		Inject Mapper in controller constructor
+		Use Mapper for DTO<->Entity conversions
+		
