@@ -45,3 +45,10 @@ Issue #6 Implement Repository Pattern
 	Update controller to use DI repository
 
 Issue #7 Perform logging in code
+
+Issue #8 Handle Exceptions Globally
+			Create custom exceptions classes in exception folder
+			Create a Global Try/Catch and use Switch to handle different exceptions 
+				in an ExceptionMiddleware class in Middleware package
+			Register the Middleware in Application pipeline in Program.cs
+ 

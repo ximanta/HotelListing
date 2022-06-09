@@ -1,5 +1,6 @@
 using HotelListing.API.config;
 using HotelListing.API.data;
+using HotelListing.API.Middleware;
 using HotelListing.API.Repository;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
@@ -40,6 +41,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
+app.UseMiddleware<ExceptionMiddleware>();
 app.UseCors("AllowAll");
 app.MapControllers();
 app.Run();
