@@ -20,7 +20,8 @@ namespace HotelListing.API.Repository
 
         public async Task DeleteAsync(int id)
         {
-            var entity = await _context.Set<T>().FindAsync(id);
+            DbSet<T>  CountrySet= _context.Set<T>();
+            var entity = await CountrySet.FindAsync(id);
             _context.Remove(entity);
 
         }
