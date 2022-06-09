@@ -52,3 +52,14 @@ Issue #8 Handle Exceptions Globally
 				in an ExceptionMiddleware class in Middleware package
 			Register the Middleware in Application pipeline in Program.cs
  
+ Issue #9 Enable Response Caching
+			Add AddResponseCaching to builder.Services with options in Program.cs
+			Add caching middleware in Program.cs
+			Configure caching middleware in Program.cs
+			To test:
+				Increase caching time from 10 secs to 30 secs or More. 
+				Get All Countries from Swagger. Ensure Response header contains " cache-control: public,max-age=30 
+				Quickly Post a new country from POSTMAN
+				Again Get All Countries from Swagger. The new insert is not reflected as data is getting picked up from cache
+				Post 30 sec or More, Again Get All Countries from Swagger. You will see the newly inserted data 
+"
