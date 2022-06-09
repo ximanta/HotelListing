@@ -2,6 +2,7 @@
 
 using HotelListing.API.config;
 using HotelListing.API.data;
+using HotelListing.API.Repository;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 
@@ -26,6 +27,10 @@ options.AddPolicy("AllowAll",
 
 builder.Host.UseSerilog((ctx, lc) => lc.WriteTo.Console().ReadFrom.Configuration(ctx.Configuration));
 builder.Services.AddAutoMapper(typeof(MapperConfig));
+/*The AddScoped method registers the service with a scoped lifetime, the lifetime of a single request.*/
+builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+//builder.Services.AddScoped(typeof(ICountryRepository), typeof(CountryRepository));
+builder.Services.AddScoped<ICountryRepository, CountryRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -35,12 +40,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
 app.UseCors("AllowAll");
-
 app.MapControllers();
-
 app.Run();
