@@ -59,7 +59,7 @@ Issue #8 Handle Exceptions Globally
 			To test:
 				Increase caching time from 10 secs to 30 secs or More. 
 				Get All Countries from Swagger. Ensure Response header contains " cache-control: public,max-age=30 
-				Quickly Post a new country from POSTMAN
+				Quickly Post a new country from POSTMAN.
 				Again Get All Countries from Swagger. The new insert is not reflected as data is getting picked up from cache
 				Post 30 sec or More, Again Get All Countries from Swagger. You will see the newly inserted data 
 "
