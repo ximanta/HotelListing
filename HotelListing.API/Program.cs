@@ -1,5 +1,3 @@
-
-
 using HotelListing.API.config;
 using HotelListing.API.data;
 using HotelListing.API.Repository;

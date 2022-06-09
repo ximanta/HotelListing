@@ -19,11 +19,13 @@ namespace HotelListing.API.Controllers
      
         private readonly IMapper _mapper;
         private readonly ICountryRepository _countryRepository;
+        private readonly ILogger<CountriesController> _logger;
 
-        public CountriesController(IMapper mapper, ICountryRepository countryRepository)
+        public CountriesController(IMapper mapper, ICountryRepository countryRepository, ILogger<CountriesController> logger)
         {
             this._mapper = mapper;
             this._countryRepository = countryRepository;
+            this._logger = logger;
         }
 
         // GET: api/Countries
@@ -32,6 +34,8 @@ namespace HotelListing.API.Controllers
          * return a value and that usually executes asynchronously.*/
         public async Task<ActionResult<IEnumerable<OutgoingCountryDTO>>> GetCountries()
         {
+            _logger.LogInformation("Request received for getting all countries at {DT}",
+            DateTime.UtcNow.ToLongTimeString());
             var countries = await _countryRepository.GetAllAsync();
             var countryDTOs = _mapper.Map<List<OutgoingCountryDTO>>(countries);
             
@@ -75,7 +79,7 @@ namespace HotelListing.API.Controllers
             {
                 await _countryRepository.UpdateAsync(country);
             }
-            catch (DbUpdateConcurrencyException)
+            catch (DbUpdateConcurrencyException dce)
             {
                 if (!await CountryExists(id))
                 {
@@ -83,7 +87,9 @@ namespace HotelListing.API.Controllers
                 }
                 else
                 {
-                    throw;
+                    _logger.LogError(dce, "Exception thrown at {DT}", DateTime.UtcNow.ToLongTimeString());
+
+                     throw;
                 }
             }
 
