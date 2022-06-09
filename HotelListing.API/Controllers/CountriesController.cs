@@ -10,6 +10,7 @@ using HotelListing.API.Models.Country;
 using AutoMapper;
 using HotelListing.API.Repository;
 using HotelListing.API.Exceptions;
+using HotelListing.API.Models;
 
 namespace HotelListing.API.Controllers
 {
@@ -30,7 +31,8 @@ namespace HotelListing.API.Controllers
         }
 
         // GET: api/Countries
-        [HttpGet]
+        // GET: api/Countries/GetAll
+        [HttpGet("GetAll")]
         /* Task class represents a single operation that does not 
          * return a value and that usually executes asynchronously.*/
         public async Task<ActionResult<IEnumerable<OutgoingCountryDTO>>> GetCountries()
@@ -41,6 +43,13 @@ namespace HotelListing.API.Controllers
             var countryDTOs = _mapper.Map<List<OutgoingCountryDTO>>(countries);
             
             return Ok(countryDTOs) ;
+        }
+        /* GET: api/Countries/?StartIndex=0&pagesize=25&PageNumber=1*/
+        [HttpGet]
+        public async Task<ActionResult<PagedResult<OutgoingCountryDTO>>> GetPagedCountries([FromQuery] PageQueryParameters queryParameters)
+        {
+            var pagedCountriesResult = await _countryRepository.GetAllAsync<OutgoingCountryDTO>(queryParameters);
+            return Ok(pagedCountriesResult);
         }
 
         // GET: api/Countries/5

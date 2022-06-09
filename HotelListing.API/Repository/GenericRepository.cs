@@ -1,4 +1,7 @@
-﻿using HotelListing.API.data;
+﻿using AutoMapper;
+using AutoMapper.QueryableExtensions;
+using HotelListing.API.data;
+using HotelListing.API.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace HotelListing.API.Repository
@@ -6,10 +9,12 @@ namespace HotelListing.API.Repository
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         private readonly HotelListDbContext _context;
-
-        public GenericRepository(HotelListDbContext _context)
+        private readonly IMapper _mapper;
+    
+        public GenericRepository(HotelListDbContext _context, IMapper mapper)
         {
             this._context = _context;
+            this._mapper = mapper;
         }
         public async Task<T> AddAsync(T entity)
         {
@@ -39,6 +44,30 @@ namespace HotelListing.API.Repository
      
         }
 
+        public async Task<PagedResult<TResult>> GetAllAsync<TResult>(PageQueryParameters queryParameters)
+        {
+            /*Get total count of records*/
+            var totalSize = await _context.Set<T>().CountAsync();
+
+            var items = await _context.Set<T>()
+                /*Specify from where to start*/
+                .Skip(queryParameters.StartIndex)
+                /*Specify the paging count to retrieve*/
+                .Take(queryParameters.PageSize)
+                /*For efficient querying, only query those columns 
+                 * required by DTO as specified by _mapper configuration*/
+                .ProjectTo<TResult>(_mapper.ConfigurationProvider)
+                /*Retrieve paged records*/
+                .ToListAsync();
+            /*Construct and return PagedResult with records, and paging information*/
+            return new PagedResult<TResult>
+            {
+                Items = items,
+                PageNumber = queryParameters.PageNumber,
+                RecordNumber = queryParameters.PageSize,
+                TotalCount = totalSize
+            };
+        }
 
         public async Task<T> GetAsync(int? id)
         { 

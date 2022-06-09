@@ -62,4 +62,15 @@ Issue #8 Handle Exceptions Globally
 				Quickly Post a new country from POSTMAN.
 				Again Get All Countries from Swagger. The new insert is not reflected as data is getting picked up from cache
 				Post 30 sec or More, Again Get All Countries from Swagger. You will see the newly inserted data 
-"
+
+Issue #10 Enable Paging 
+			Create PageQueryParameters class to represent request query parameters to be used for paging
+			Create PagedResult class to represent what will be returned as response to a paged query
+			Update IGenericRepository to add a GetAllAsync() method for paging
+			Implement the GetAllAsync() method for paging in GenericRepository class
+			Add action method in controller to accept query parameters as specified in 
+				PageQueryParameters and to return PagedResult
+			Test without and with different paging requirements:
+			    https://localhost:7254/api/countries
+				https://localhost:7254/api/countries?StartIndex=0&pagesize=2&PageNumber=1
+				https://localhost:7254/api/countries?StartIndex=0&pagesize=1&PageNumber=1
