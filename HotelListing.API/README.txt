@@ -82,4 +82,15 @@ Issue #16 Add OData for Custom Querying, Sorting, Ordering
 		 Add OData with options as dependency to controller in Program.cs
          In GetAll method of controller add [EnableQuery]
 		 To Test:
-		    In Postman access endpoint with query paramater key $select and value
+		    In Postman access endpoint with query paramater key $select and value ()
+
+Issue #17 Create UserProfileService to perform UserProfile CRUD, authentication and return JWT Token 
+          Key Notes:
+		  NuGet Dependency Jwt and JwtBearer
+		  Add minimum 128 bit secret in appsettings.json
+		  In Program.cs add AppSettings class as a service to IoC container
+		  Test by making POST request to https://localhost:7030/api/Users/authenticate with request body of seed user.
+			{
+				"emailId": ""julia@example.com",
+				"password": "Julia"
+			}

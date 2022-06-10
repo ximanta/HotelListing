@@ -12,6 +12,7 @@ using AutoMapper;
 using UserService.Dtos;
 using HotelListing.API.Exceptions;
 using Microsoft.AspNetCore.OData.Query;
+using UserService.Models;
 
 namespace UserService.Controller
 {
@@ -105,6 +106,23 @@ namespace UserService.Controller
         private bool UserProfileExists(int id)
         {
             return _userService.Exists(id);
+        }
+
+
+        [HttpPost("authenticate")]
+        public IActionResult Authenticate(AuthenticateRequest model)
+        {
+            //   _logger.LogInformation("Login attempted by {EmailId} at {DT}",model.EmailId,DateTime.UtcNow.ToLongTimeString());
+            AuthenticateResponse response = _userService.Authenticate(model);
+
+            if (response == null)
+            {
+          //      _logger.LogError("Invalid Login attempted by {EmailId} at {DT}", model.EmailId, DateTime.UtcNow.ToLongTimeString());
+
+                return BadRequest(new { message = "Username or password is incorrect" });
+            }
+
+            return Ok(response);
         }
     }
 }

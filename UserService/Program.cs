@@ -42,7 +42,7 @@ builder.Services.AddResponseCaching(options =>
     options.MaximumBodySize = 1024;
     options.UseCaseSensitivePaths = true;
 });
-
+builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
 builder.Services.AddControllers().AddOData(options =>
 {
     options.Select().Filter().OrderBy();

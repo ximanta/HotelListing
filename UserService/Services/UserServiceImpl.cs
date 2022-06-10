@@ -1,6 +1,11 @@
 ﻿
 using HotelListing.API.Exceptions;
 using HotelListing.API.Repository;
+using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 using UserService.entities;
 using UserService.Models;
 
@@ -10,11 +15,13 @@ namespace UserService.Services
     {
         private readonly HotelListing.API.Repository.IGenericRepository<UserProfile> _repository;
         private readonly ILogger<UserServiceImpl> _logger;
+        private readonly AppSettings _appSettings;
 
-        public UserServiceImpl(IGenericRepository<UserProfile> repository, ILogger<UserServiceImpl> logger)
+        public UserServiceImpl(IGenericRepository<UserProfile> repository, ILogger<UserServiceImpl> logger, IOptions<AppSettings> appSettings)
         {
             this._repository = repository;
             this._logger = logger;
+            this._appSettings = appSettings.Value;
         }
         public UserProfile Add(UserProfile user)
         {
@@ -72,7 +79,35 @@ namespace UserService.Services
         }
         public AuthenticateResponse Authenticate(AuthenticateRequest model)
         {
-            throw new NotImplementedException();
+            string token=null;
+            UserProfile userProfile = GetByEmail(model.EmailId);
+            if (userProfile == null)
+            {
+                throw new NotFoundException(nameof(Authenticate), 0);
+            }
+
+            // authentication successful so generate jwt token
+            if (userProfile.EmailId == model.EmailId && userProfile.Password == model.Password)
+            {
+                 token = generateJwtToken(userProfile);
+            }
+
+            return new AuthenticateResponse(userProfile, token);
+        }
+        private string generateJwtToken(UserProfile user)
+        {
+          
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new[] { new Claim("id", user.Id.ToString()) }),
+                // Generated token is valid for 1 Hour
+                Expires = DateTime.UtcNow.AddHours(1),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+            };
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            return tokenHandler.WriteToken(token);
         }
 
     }
