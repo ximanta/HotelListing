@@ -12,6 +12,6 @@ namespace HotelListing.API.Repository
         Task DeleteAsync(int id);
         Task UpdateAsync(T entity);
         Task<bool> Exists(int id);
-        User GetByEmail(String emailId);
+        UserProfile GetByEmail(String emailId);
     }
 }

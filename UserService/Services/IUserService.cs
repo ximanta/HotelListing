@@ -7,12 +7,12 @@ namespace UserService.Services
     {
 
         AuthenticateResponse Authenticate(AuthenticateRequest model);
-        Task<IEnumerable<User>> GetAll();
-        Task<User> GetById(int id);
-        Task<User> Update(int id, User user);
-        User Add(User user);
-        User Delete(User user);
-        User GetByEmail(String emailId);
+        Task<IEnumerable<UserProfile>> GetAll();
+        Task<UserProfile> GetById(int id);
+        Task<UserProfile> Update(int id, UserProfile user);
+        UserProfile Add(UserProfile user);
+        UserProfile Delete(UserProfile user);
+        UserProfile GetByEmail(String emailId);
         public bool Exists(int id);
       
 

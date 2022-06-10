@@ -4,20 +4,20 @@ using UserService.entities;
 
 namespace HotelListing.API.Data
 {
-    public class UserDbContext: DbContext
+    public class UserProfileDbContext: DbContext
     {
-        public UserDbContext(DbContextOptions options):base(options)
+        public UserProfileDbContext(DbContextOptions options):base(options)
         { 
 
         }
   
-        public DbSet<User> Users { get; set; }
+        public DbSet<UserProfile> User { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<User>().HasData(
-                new User
+            modelBuilder.Entity<UserProfile>().HasData(
+                new UserProfile
                 {
                     Id = 1,
                     Name="Andy Crawford",
@@ -26,7 +26,7 @@ namespace HotelListing.API.Data
                     Gender='M',
                     Age=24
                 },
-                    new User
+                    new UserProfile
                     {
                         Id = 2,
                         Name = "Julia Jackson",
@@ -35,7 +35,7 @@ namespace HotelListing.API.Data
                         Gender = 'F',
                         Age = 22
                     },
-                          new User
+                          new UserProfile
                           {
                               Id = 3,
                               Name = "Arun Lal",

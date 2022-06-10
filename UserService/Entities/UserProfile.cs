@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace UserService.entities
 {
-    public class User
+    public class UserProfile
     {
         public int Id { get; set; }
 
@@ -18,9 +18,6 @@ namespace UserService.entities
         public char Gender { get; set; }
         public int Age { get; set; }
 
-        public static implicit operator Task<object>(User v)
-        {
-            throw new NotImplementedException();
-        }
+    
     }
 }

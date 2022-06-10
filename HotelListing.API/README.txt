@@ -74,3 +74,12 @@ Issue #10 Enable Paging
 			    https://localhost:7254/api/countries
 				https://localhost:7254/api/countries?StartIndex=0&pagesize=2&PageNumber=1
 				https://localhost:7254/api/countries?StartIndex=0&pagesize=1&PageNumber=1
+
+
+Issue #16 Add OData for Custom Querying, Sorting, Ordering
+
+         Add NuGet Dependency of OData - IMP Ensure version is 8.0.8
+		 Add OData with options as dependency to controller in Program.cs
+         In GetAll method of controller add [EnableQuery]
+		 To Test:
+		    In Postman access endpoint with query paramater key $select and value

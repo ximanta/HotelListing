@@ -10,10 +10,10 @@ namespace HotelListing.API.Repository
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
-        private readonly UserDbContext _context;
+        private readonly UserProfileDbContext _context;
         private readonly IMapper _mapper;
     
-        public GenericRepository(UserDbContext _context, IMapper mapper)
+        public GenericRepository(UserProfileDbContext _context, IMapper mapper)
         {
             this._context = _context;
             this._mapper = mapper;
@@ -87,9 +87,9 @@ namespace HotelListing.API.Repository
             _context.Update(entity);
             await _context.SaveChangesAsync();
         }
-        public User GetByEmail(String emailId)
+        public UserProfile GetByEmail(String emailId)
         {
-            var User = _context.Users
+            var User = _context.User
     .Where(m => m.EmailId == emailId)
     .Select(m => m)
     .SingleOrDefault();

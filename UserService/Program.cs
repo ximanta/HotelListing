@@ -1,6 +1,7 @@
 using HotelListing.API.config;
 using HotelListing.API.Data;
 using HotelListing.API.Repository;
+using Microsoft.AspNetCore.OData;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 using UserService.Services;
@@ -11,11 +12,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 var connectionString = builder.Configuration.GetConnectionString("UserDbConnectionString");
 // Add services to the container.
-builder.Services.AddDbContext<UserDbContext>(options =>
+builder.Services.AddDbContext<UserProfileDbContext>(options =>
 {
     options.UseSqlServer(connectionString);
 });
-builder.Services.AddControllers();
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddCors(options => {
@@ -42,7 +43,10 @@ builder.Services.AddResponseCaching(options =>
     options.UseCaseSensitivePaths = true;
 });
 
-
+builder.Services.AddControllers().AddOData(options =>
+{
+    options.Select().Filter().OrderBy();
+});
 
 var app = builder.Build();
 

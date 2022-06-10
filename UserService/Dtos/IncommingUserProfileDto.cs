@@ -1,6 +1,6 @@
 ﻿namespace UserService.Dtos
 {
-    public class IncommingUserDto
+    public class IncommingUserProfileDto
     {
         public string Name { get; set; }
         public string EmailId { get; set; }

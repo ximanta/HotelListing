@@ -8,8 +8,8 @@ namespace HotelListing.API.config
     {
         public MapperConfig()
         {
-            CreateMap<User, IncommingUserDto>().ReverseMap();
-            CreateMap<User, OutgoingUserDto>().ReverseMap();
+            CreateMap<UserProfile, IncommingUserProfileDto>().ReverseMap();
+            CreateMap<UserProfile, OutgoingUserProfileDto>().ReverseMap();
         }
     }
 }

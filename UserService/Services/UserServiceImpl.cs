@@ -8,15 +8,15 @@ namespace UserService.Services
 {
     public class UserServiceImpl : IUserService
     {
-        private readonly HotelListing.API.Repository.IGenericRepository<User> _repository;
+        private readonly HotelListing.API.Repository.IGenericRepository<UserProfile> _repository;
         private readonly ILogger<UserServiceImpl> _logger;
 
-        public UserServiceImpl(IGenericRepository<User> repository, ILogger<UserServiceImpl> logger)
+        public UserServiceImpl(IGenericRepository<UserProfile> repository, ILogger<UserServiceImpl> logger)
         {
             this._repository = repository;
             this._logger = logger;
         }
-        public User Add(User user)
+        public UserProfile Add(UserProfile user)
         {
             _repository.AddAsync(user);
             return user;
@@ -24,7 +24,7 @@ namespace UserService.Services
 
      
 
-        public User Delete(User user)
+        public UserProfile Delete(UserProfile user)
         {
             _logger.LogInformation("Received Delete call for all User {USER} at {DT}", user, DateTime.UtcNow.ToLongTimeString());
 
@@ -36,25 +36,25 @@ namespace UserService.Services
             return user;
         }
 
-        public  async Task<IEnumerable<User>> GetAll()
+        public  async Task<IEnumerable<UserProfile>> GetAll()
         {
-            _logger.LogInformation("Received GET call for all Users at {DT}", DateTime.UtcNow.ToLongTimeString());
+            _logger.LogInformation("Received GET call for all User Profiles at {DT}", DateTime.UtcNow.ToLongTimeString());
             return await _repository.GetAllAsync();
         }
-        public User GetByEmail(string emailid) {
+        public UserProfile GetByEmail(string emailid) {
             return _repository.GetByEmail(emailid);
        }
-        public async Task<User> GetById(int id)
+        public async Task<UserProfile> GetById(int id)
         {
             _logger.LogInformation("Received GET call for User with {id}", id);
-            User user = await _repository.GetAsync(id);
+            UserProfile user = await _repository.GetAsync(id);
             if (user == null) {
                 throw new NotFoundException(nameof(GetById), id);
             }
             return user;
         }
 
-        public async Task<User> Update(int id, User user)
+        public async Task<UserProfile> Update(int id, UserProfile user)
 
         {
             if (GetById(user.Id) is null)
