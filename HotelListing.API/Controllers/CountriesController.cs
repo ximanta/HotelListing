@@ -113,7 +113,7 @@ namespace HotelListing.API.Controllers
         {
             var country = _mapper.Map<Country>(countryDTO);
             await _countryRepository.AddAsync(country);        
-            return CreatedAtAction("GetCountry", new { id = country.Id }, country);
+            return CreatedAtAction("PostCountry", new { id = country.Id }, country);
         }
 
         // DELETE: api/Countries/5
