@@ -13,6 +13,7 @@ using UserService.Dtos;
 using HotelListing.API.Exceptions;
 using Microsoft.AspNetCore.OData.Query;
 using UserService.Models;
+using MassTransit;
 
 namespace UserService.Controller
 {
@@ -23,12 +24,14 @@ namespace UserService.Controller
         private readonly IUserService _userService;
         private readonly ILogger<UsersController> _logger;
         private readonly IMapper _mapper;
+        private readonly IBus _bus;
 
-        public UsersController(IUserService userService, ILogger<UsersController> logger, IMapper mapper)
+        public UsersController(IUserService userService, ILogger<UsersController> logger, IMapper mapper, IBus bus)
         {
             this._userService = userService;
             this._logger = logger;
             this._mapper = mapper;
+            this._bus = bus;
         }
 
         // GET: api/Users
@@ -87,11 +90,13 @@ namespace UserService.Controller
         // POST: api/Users
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public  ActionResult<UserProfile> PostUserProfile(IncommingUserProfileDto incommingUserDto)
+        public  async Task<ActionResult<UserProfile>> PostUserProfile(IncommingUserProfileDto incommingUserDto)
         {
             var user = _mapper.Map<UserProfile>(incommingUserDto);
-            _userService.Add(user);
-            return CreatedAtAction("PostUserProfile", new { id = user.Id }, user);
+            var uri = new Uri("rabbitmq://localhost/user-send");
+            var endPoint = await _bus.GetSendEndpoint(uri);
+            await endPoint.Send(user);
+            return Ok("User save and sent successfully");
         }
 
         // DELETE: api/Users/5

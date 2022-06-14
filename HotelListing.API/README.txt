@@ -94,3 +94,9 @@ Issue #17 Create UserProfileService to perform UserProfile CRUD, authentication 
 				"emailId": ""julia@example.com",
 				"password": "Julia"
 			}
+
+Issue #19 Publish user details to RabbitMQ
+	Pull and run RabbitMQ:3-management image
+	NuGet Dependency: MassTransit; MassTransit.RabbitMQ
+	Register MassTransit and RabbitMQ in Program.cs
+	Change post mapping usercontroller to send data on to rabbit MQ.
