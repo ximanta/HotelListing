@@ -1,3 +1,4 @@
+using APIGateway.Services;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 
@@ -10,6 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddOcelot();
+builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
