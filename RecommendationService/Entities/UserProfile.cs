@@ -11,10 +11,9 @@ namespace RecommendationService.Entities
         [Required]
         public string EmailId { get; set; }
         [Required]
-        [JsonIgnore]
-        public string Password { get; set; }
-        [Required]
         public char Gender { get; set; }
         public int Age { get; set; }
+
+        public string country { get; set;  }
     }
 }

@@ -100,3 +100,10 @@ Issue #19 Publish user details to RabbitMQ
 	NuGet Dependency: MassTransit; MassTransit.RabbitMQ
 	Register MassTransit and RabbitMQ in Program.cs
 	Change post mapping usercontroller to send data on to rabbit MQ.
+
+Issue #24 Connecting Recommandation service to Neo4j
+	Pull and run neo4j image from docker hub
+	NuGet Dependency: Neo4jClient
+	Register Neo4j client in program.cs
+	create a model class
+	create a controller to communicate

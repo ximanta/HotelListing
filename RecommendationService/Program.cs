@@ -1,5 +1,7 @@
 using MassTransit;
+using Neo4jClient;
 using RecommendationService.config;
+using RecommendationService.Services;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -30,12 +32,19 @@ builder.Services.AddMassTransit(x =>
             h.Password("guest");
         });
         cfg.ConfigureEndpoints(context);
+
         cfg.ReceiveEndpoint("user-send", e =>
         {
             e.Consumer<RabbitConfig>(context);
         });
     });
 });
+var client = new BoltGraphClient(new Uri("bolt://localhost:7687"), "neo4j", "admin");
+client.ConnectAsync();
+builder.Services.AddSingleton<IGraphClient>(client);
+
+builder.Services.AddScoped(typeof(ICountryService), typeof(CountryService));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

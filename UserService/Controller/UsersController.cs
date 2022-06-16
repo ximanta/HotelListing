@@ -25,13 +25,15 @@ namespace UserService.Controller
         private readonly ILogger<UsersController> _logger;
         private readonly IMapper _mapper;
         private readonly IBus _bus;
+        private readonly IPublishEndpoint _publishEndpoint;
 
-        public UsersController(IUserService userService, ILogger<UsersController> logger, IMapper mapper, IBus bus)
+        public UsersController(IUserService userService, ILogger<UsersController> logger, IMapper mapper, IPublishEndpoint _publishEndpoint, IBus _bus)
         {
             this._userService = userService;
             this._logger = logger;
             this._mapper = mapper;
-            this._bus = bus;
+            this._publishEndpoint = _publishEndpoint;
+            this._bus = _bus;
         }
 
         // GET: api/Users
