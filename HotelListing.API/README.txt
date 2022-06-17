@@ -82,7 +82,17 @@ Issue #16 Add OData for Custom Querying, Sorting, Ordering
 		 Add OData with options as dependency to controller in Program.cs
          In GetAll method of controller add [EnableQuery]
 		 To Test:
-		    In Postman access endpoint with query paramater key $select and value ()
+		    In Postman access endpoint to select:
+				To select by name and gender:
+				https://localhost:7030/api/Users?$select=name, gender
+				To filter:
+						 By age greater than 22
+				         https://localhost:7030/api/Users?$filter=  age gt 22
+						 By gender
+						 https://localhost:7030/api/Users?$filter=  gender eq 'M'
+				To order by:
+					 https://localhost:7030/api/Users?$orderby=name
+
 
 Issue #17 Create UserProfileService to perform UserProfile CRUD, authentication and return JWT Token 
           Key Notes:

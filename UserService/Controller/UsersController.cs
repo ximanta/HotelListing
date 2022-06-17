@@ -34,7 +34,7 @@ namespace UserService.Controller
         // GET: api/Users
         [HttpGet]
         [EnableQuery]
-        public async Task<ActionResult<IEnumerable<UserProfile>>> GetUserProfiles()
+        public async Task<ActionResult<IEnumerable<OutgoingUserProfileDto>>> GetUserProfiles()
         {
             _logger.LogInformation("Request received for getting all countries at {DT}",
             DateTime.UtcNow.ToLongTimeString());
