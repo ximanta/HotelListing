@@ -1,6 +1,7 @@
 using HotelListing.API.config;
 using HotelListing.API.Data;
 using HotelListing.API.Repository;
+using MassTransit;
 using Microsoft.AspNetCore.OData;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
@@ -46,6 +47,19 @@ builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSet
 builder.Services.AddControllers().AddOData(options =>
 {
     options.Select().Filter().OrderBy();
+});
+
+builder.Services.AddMassTransit(x =>
+{
+    x.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.Host("localhost", "/", h =>
+        {
+            h.Username("guest");
+            h.Password("guest");
+        });
+        cfg.ConfigureEndpoints(context);
+    });
 });
 
 var app = builder.Build();
