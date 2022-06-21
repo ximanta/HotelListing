@@ -95,6 +95,7 @@ namespace UserService.Controller
         public  async Task<ActionResult<UserProfile>> PostUserProfile(IncommingUserProfileDto incommingUserDto)
         {
             var user = _mapper.Map<UserProfile>(incommingUserDto);
+            _userService.Add(user);
             Console.WriteLine("Sending data");
             var uri = new Uri("rabbitmq://localhost/user-send");
             var endPoint = await _bus.GetSendEndpoint(uri);

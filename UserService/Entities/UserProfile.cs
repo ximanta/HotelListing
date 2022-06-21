@@ -17,7 +17,6 @@ namespace UserService.entities
         [Required]
         public char Gender { get; set; }
         public int Age { get; set; }
-        public string country { get; set; }
 
     }
 }
