@@ -1,11 +1,34 @@
 version: '3.4'
 
 services:
-  demohotellisting:
-    image: ${DOCKER_REGISTRY-}demohotellisting
+  feedbackdb:
+    image: mongo:latest
+    container_name: "feedbackdb"
+ #   networks:
+  #    - bridge
+    hostname: localhost
+    ports:
+      - 27017:27017
+
+  feedbackservice:
+    image: ${DOCKER_REGISTRY-}feedbackservice
     build:
       context: .
-      dockerfile: DemoHotelListing/Dockerfile
+      dockerfile: FeedbackService/Dockerfile
+ #   networks:
+  #    - bridge
+    hostname: localhost
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "CampaignDatabase:ConnectionString=mongodb://feedbackdb:27017"
+    depends_on:
+      - feedbackdb
     ports:
-      - 8085:80
-      - 8086:443
+      - 8090:80
+      - 8095:443
+    
+
+#networks:
+ # bridge:
+    # Use a custom driver
+  #  driver: bridge
