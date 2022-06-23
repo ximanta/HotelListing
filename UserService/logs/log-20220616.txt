@@ -1,0 +1,52 @@
+2022-06-16 05:34:58.581 +05:30 [INF] Now listening on: https://localhost:7030
+2022-06-16 05:34:58.607 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2022-06-16 05:34:58.652 +05:30 [INF] Now listening on: http://localhost:5030
+2022-06-16 05:34:58.656 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 05:34:58.660 +05:30 [INF] Hosting environment: Development
+2022-06-16 05:34:58.663 +05:30 [INF] Content root path: C:\StackRoute\DotNet\HotelListing-fork\UserService\
+2022-06-16 05:38:24.150 +05:30 [INF] Application is shutting down...
+2022-06-16 05:38:24.240 +05:30 [INF] Bus stopped: "rabbitmq://localhost/"
+2022-06-16 05:38:53.350 +05:30 [INF] Now listening on: https://localhost:7030
+2022-06-16 05:38:53.377 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2022-06-16 05:38:53.438 +05:30 [INF] Now listening on: http://localhost:5030
+2022-06-16 05:38:53.443 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 05:38:53.448 +05:30 [INF] Hosting environment: Development
+2022-06-16 05:38:53.453 +05:30 [INF] Content root path: C:\StackRoute\DotNet\HotelListing-fork\UserService\
+2022-06-16 05:40:49.995 +05:30 [INF] Application is shutting down...
+2022-06-16 05:40:50.096 +05:30 [INF] Bus stopped: "rabbitmq://localhost/"
+2022-06-16 05:41:24.612 +05:30 [INF] Now listening on: https://localhost:7030
+2022-06-16 05:41:24.618 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2022-06-16 05:41:24.677 +05:30 [INF] Now listening on: http://localhost:5030
+2022-06-16 05:41:24.683 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 05:41:24.686 +05:30 [INF] Hosting environment: Development
+2022-06-16 05:41:24.688 +05:30 [INF] Content root path: C:\StackRoute\DotNet\HotelListing-fork\UserService\
+2022-06-16 05:42:25.265 +05:30 [INF] Application is shutting down...
+2022-06-16 05:42:25.326 +05:30 [INF] Bus stopped: "rabbitmq://localhost/"
+2022-06-16 05:54:38.009 +05:30 [INF] Now listening on: https://localhost:7030
+2022-06-16 05:54:38.021 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2022-06-16 05:54:38.074 +05:30 [INF] Now listening on: http://localhost:5030
+2022-06-16 05:54:38.078 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 05:54:38.081 +05:30 [INF] Hosting environment: Development
+2022-06-16 05:54:38.085 +05:30 [INF] Content root path: C:\StackRoute\DotNet\HotelListing-fork\UserService\
+2022-06-16 05:58:27.331 +05:30 [INF] Now listening on: https://localhost:7030
+2022-06-16 05:58:27.345 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2022-06-16 05:58:27.438 +05:30 [INF] Now listening on: http://localhost:5030
+2022-06-16 05:58:27.440 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 05:58:27.442 +05:30 [INF] Hosting environment: Development
+2022-06-16 05:58:27.444 +05:30 [INF] Content root path: C:\StackRoute\DotNet\HotelListing-fork\UserService\
+2022-06-16 05:58:48.254 +05:30 [INF] Now listening on: https://localhost:7030
+2022-06-16 05:58:48.268 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2022-06-16 05:58:48.347 +05:30 [INF] Now listening on: http://localhost:5030
+2022-06-16 05:58:48.352 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 05:58:48.355 +05:30 [INF] Hosting environment: Development
+2022-06-16 05:58:48.360 +05:30 [INF] Content root path: C:\StackRoute\DotNet\HotelListing-fork\UserService\
+2022-06-16 06:05:24.002 +05:30 [INF] Application is shutting down...
+2022-06-16 06:05:24.091 +05:30 [INF] Bus stopped: "rabbitmq://localhost/"
+2022-06-16 06:07:32.194 +05:30 [INF] Now listening on: https://localhost:7030
+2022-06-16 06:07:32.240 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2022-06-16 06:07:32.278 +05:30 [INF] Now listening on: http://localhost:5030
+2022-06-16 06:07:32.279 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 06:07:32.281 +05:30 [INF] Hosting environment: Development
+2022-06-16 06:07:32.282 +05:30 [INF] Content root path: C:\StackRoute\DotNet\HotelListing-fork\UserService\
+2022-06-16 06:08:23.569 +05:30 [INF] Application is shutting down...
+2022-06-16 06:08:23.639 +05:30 [INF] Bus stopped: "rabbitmq://localhost/"

@@ -1,0 +1,121 @@
+2022-06-15 05:39:29.911 +05:30 [INF] Now listening on: https://localhost:7088
+2022-06-15 05:39:30.004 +05:30 [INF] Now listening on: http://localhost:5088
+2022-06-15 05:39:30.014 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-15 05:39:30.018 +05:30 [INF] Hosting environment: Development
+2022-06-15 05:39:30.021 +05:30 [INF] Content root path: C:\StackRoute\DotNet\HotelListing-fork\RecommendationService\
+2022-06-15 05:39:30.112 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2022-06-15 05:40:41.629 +05:30 [INF] Application is shutting down...
+2022-06-15 05:40:41.712 +05:30 [INF] Bus stopped: "rabbitmq://localhost/"
+2022-06-15 06:00:31.522 +05:30 [INF] Now listening on: https://localhost:7088
+2022-06-15 06:00:31.555 +05:30 [INF] Now listening on: http://localhost:5088
+2022-06-15 06:00:31.560 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-15 06:00:31.562 +05:30 [INF] Hosting environment: Development
+2022-06-15 06:00:31.564 +05:30 [INF] Content root path: C:\StackRoute\DotNet\HotelListing-fork\RecommendationService\
+2022-06-15 06:00:32.276 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2022-06-15 06:01:13.625 +05:30 [INF] Application is shutting down...
+2022-06-15 06:01:13.678 +05:30 [INF] Bus stopped: "rabbitmq://localhost/"
+2022-06-15 06:01:34.373 +05:30 [INF] Now listening on: https://localhost:7088
+2022-06-15 06:01:34.407 +05:30 [INF] Now listening on: http://localhost:5088
+2022-06-15 06:01:34.411 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-15 06:01:34.412 +05:30 [INF] Hosting environment: Development
+2022-06-15 06:01:34.413 +05:30 [INF] Content root path: C:\StackRoute\DotNet\HotelListing-fork\RecommendationService\
+2022-06-15 06:01:34.459 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2022-06-15 06:02:24.026 +05:30 [INF] Application is shutting down...
+2022-06-15 06:02:24.081 +05:30 [INF] Bus stopped: "rabbitmq://localhost/"
+2022-06-15 06:06:14.761 +05:30 [INF] Now listening on: https://localhost:7088
+2022-06-15 06:06:14.798 +05:30 [INF] Now listening on: http://localhost:5088
+2022-06-15 06:06:14.802 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-15 06:06:14.803 +05:30 [INF] Hosting environment: Development
+2022-06-15 06:06:14.804 +05:30 [INF] Content root path: C:\StackRoute\DotNet\HotelListing-fork\RecommendationService\
+2022-06-15 06:06:14.911 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2022-06-15 06:06:29.011 +05:30 [ERR] R-FAULT "rabbitmq://localhost/user-send" "b0500000-5043-c8f7-4529-08da4e67162c" UserService.entities.UserProfile RecommendationService.config.RabbitConfig("00:00:00.0090632")
+MassTransit.ConsumerException: Unable to resolve consumer type 'RecommendationService.config.RabbitConfig'.
+   at MassTransit.DependencyInjection.ConsumeScopeProvider.CreatedScopeContextFactory[TConsumer,T](ConsumeContext`1 consumeContext, IServiceScope serviceScope) in /_/src/MassTransit/DependencyInjection/DependencyInjection/ConsumeScopeProvider.cs:line 94
+   at MassTransit.DependencyInjection.BaseConsumeScopeProvider.GetScopeContext[TScopeContext,TPipeContext](TPipeContext context, Func`3 existingScopeContextFactory, Func`3 createdScopeContextFactory, Func`4 pipeContextFactory) in /_/src/MassTransit/DependencyInjection/DependencyInjection/BaseConsumeScopeProvider.cs:line 42
+--- End of stack trace from previous location ---
+   at MassTransit.Util.DisposeAsyncExtensions.<>c__DisplayClass1_0`1.<<DisposeAsync>g__Faulted|0>d.MoveNext() in /_/src/MassTransit/Util/DisposeAsyncExtensions.cs:line 50
+--- End of stack trace from previous location ---
+   at MassTransit.DependencyInjection.ScopeConsumerFactory`1.Send[TMessage](ConsumeContext`1 context, IPipe`1 next) in /_/src/MassTransit/DependencyInjection/DependencyInjection/ScopeConsumerFactory.cs:line 20
+   at MassTransit.Middleware.ConsumerMessageFilter`2.MassTransit.IFilter<MassTransit.ConsumeContext<TMessage>>.Send(ConsumeContext`1 context, IPipe`1 next) in /_/src/MassTransit/Middleware/ConsumerMessageFilter.cs:line 46
+2022-06-15 06:08:13.251 +05:30 [INF] Application is shutting down...
+2022-06-15 06:08:13.303 +05:30 [INF] Bus stopped: "rabbitmq://localhost/"
+2022-06-15 06:10:28.175 +05:30 [INF] Now listening on: https://localhost:7088
+2022-06-15 06:10:28.208 +05:30 [INF] Now listening on: http://localhost:5088
+2022-06-15 06:10:28.211 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-15 06:10:28.212 +05:30 [INF] Hosting environment: Development
+2022-06-15 06:10:28.213 +05:30 [INF] Content root path: C:\StackRoute\DotNet\HotelListing-fork\RecommendationService\
+2022-06-15 06:10:28.246 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2022-06-15 06:12:35.844 +05:30 [INF] Application is shutting down...
+2022-06-15 06:12:35.923 +05:30 [INF] Bus stopped: "rabbitmq://localhost/"
+2022-06-15 06:19:45.672 +05:30 [INF] Now listening on: https://localhost:7088
+2022-06-15 06:19:45.711 +05:30 [INF] Now listening on: http://localhost:5088
+2022-06-15 06:19:45.715 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-15 06:19:45.717 +05:30 [INF] Hosting environment: Development
+2022-06-15 06:19:45.718 +05:30 [INF] Content root path: C:\StackRoute\DotNet\HotelListing-fork\RecommendationService\
+2022-06-15 06:19:45.843 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2022-06-15 06:19:46.450 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET WeatherForecast" for actions - RecommendationService.Controllers.WeatherForecastController.Get (RecommendationService),Model.Controllers.WeatherForecastController.Get (Model). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-15 06:20:03.036 +05:30 [INF] Application is shutting down...
+2022-06-15 06:20:03.089 +05:30 [INF] Bus stopped: "rabbitmq://localhost/"
+2022-06-15 06:20:15.622 +05:30 [INF] Now listening on: https://localhost:7088
+2022-06-15 06:20:15.655 +05:30 [INF] Now listening on: http://localhost:5088
+2022-06-15 06:20:15.659 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-15 06:20:15.661 +05:30 [INF] Hosting environment: Development
+2022-06-15 06:20:15.662 +05:30 [INF] Content root path: C:\StackRoute\DotNet\HotelListing-fork\RecommendationService\
+2022-06-15 06:20:15.725 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2022-06-15 06:22:48.439 +05:30 [INF] Now listening on: https://localhost:7088
+2022-06-15 06:22:48.476 +05:30 [INF] Now listening on: http://localhost:5088
+2022-06-15 06:22:48.481 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-15 06:22:48.482 +05:30 [INF] Hosting environment: Development
+2022-06-15 06:22:48.483 +05:30 [INF] Content root path: C:\StackRoute\DotNet\HotelListing-fork\RecommendationService\
+2022-06-15 06:22:48.533 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2022-06-15 06:23:27.739 +05:30 [ERR] R-FAULT "rabbitmq://localhost/user-send" "88380000-5043-c8f7-8abd-08da4e697562" Model.User RecommendationService.config.RabbitConfig("00:00:00.0057151")
+MassTransit.ConsumerException: Unable to resolve consumer type 'RecommendationService.config.RabbitConfig'.
+   at MassTransit.DependencyInjection.ConsumeScopeProvider.CreatedScopeContextFactory[TConsumer,T](ConsumeContext`1 consumeContext, IServiceScope serviceScope) in /_/src/MassTransit/DependencyInjection/DependencyInjection/ConsumeScopeProvider.cs:line 94
+   at MassTransit.DependencyInjection.BaseConsumeScopeProvider.GetScopeContext[TScopeContext,TPipeContext](TPipeContext context, Func`3 existingScopeContextFactory, Func`3 createdScopeContextFactory, Func`4 pipeContextFactory) in /_/src/MassTransit/DependencyInjection/DependencyInjection/BaseConsumeScopeProvider.cs:line 42
+--- End of stack trace from previous location ---
+   at MassTransit.Util.DisposeAsyncExtensions.<>c__DisplayClass1_0`1.<<DisposeAsync>g__Faulted|0>d.MoveNext() in /_/src/MassTransit/Util/DisposeAsyncExtensions.cs:line 50
+--- End of stack trace from previous location ---
+   at MassTransit.DependencyInjection.ScopeConsumerFactory`1.Send[TMessage](ConsumeContext`1 context, IPipe`1 next) in /_/src/MassTransit/DependencyInjection/DependencyInjection/ScopeConsumerFactory.cs:line 20
+   at MassTransit.Middleware.ConsumerMessageFilter`2.MassTransit.IFilter<MassTransit.ConsumeContext<TMessage>>.Send(ConsumeContext`1 context, IPipe`1 next) in /_/src/MassTransit/Middleware/ConsumerMessageFilter.cs:line 46
+2022-06-15 06:26:07.913 +05:30 [INF] Application is shutting down...
+2022-06-15 06:26:07.965 +05:30 [INF] Bus stopped: "rabbitmq://localhost/"
+2022-06-15 06:26:20.095 +05:30 [INF] Now listening on: https://localhost:7088
+2022-06-15 06:26:20.129 +05:30 [INF] Now listening on: http://localhost:5088
+2022-06-15 06:26:20.133 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-15 06:26:20.134 +05:30 [INF] Hosting environment: Development
+2022-06-15 06:26:20.135 +05:30 [INF] Content root path: C:\StackRoute\DotNet\HotelListing-fork\RecommendationService\
+2022-06-15 06:26:20.189 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2022-06-15 06:26:44.470 +05:30 [ERR] R-FAULT "rabbitmq://localhost/user-send" "2c400000-5043-c8f7-b986-08da4e69eaab" Model.User RecommendationService.config.RabbitConfig("00:00:00.0055984")
+MassTransit.ConsumerException: Unable to resolve consumer type 'RecommendationService.config.RabbitConfig'.
+   at MassTransit.DependencyInjection.ConsumeScopeProvider.CreatedScopeContextFactory[TConsumer,T](ConsumeContext`1 consumeContext, IServiceScope serviceScope) in /_/src/MassTransit/DependencyInjection/DependencyInjection/ConsumeScopeProvider.cs:line 94
+   at MassTransit.DependencyInjection.BaseConsumeScopeProvider.GetScopeContext[TScopeContext,TPipeContext](TPipeContext context, Func`3 existingScopeContextFactory, Func`3 createdScopeContextFactory, Func`4 pipeContextFactory) in /_/src/MassTransit/DependencyInjection/DependencyInjection/BaseConsumeScopeProvider.cs:line 42
+--- End of stack trace from previous location ---
+   at MassTransit.Util.DisposeAsyncExtensions.<>c__DisplayClass1_0`1.<<DisposeAsync>g__Faulted|0>d.MoveNext() in /_/src/MassTransit/Util/DisposeAsyncExtensions.cs:line 50
+--- End of stack trace from previous location ---
+   at MassTransit.DependencyInjection.ScopeConsumerFactory`1.Send[TMessage](ConsumeContext`1 context, IPipe`1 next) in /_/src/MassTransit/DependencyInjection/DependencyInjection/ScopeConsumerFactory.cs:line 20
+   at MassTransit.Middleware.ConsumerMessageFilter`2.MassTransit.IFilter<MassTransit.ConsumeContext<TMessage>>.Send(ConsumeContext`1 context, IPipe`1 next) in /_/src/MassTransit/Middleware/ConsumerMessageFilter.cs:line 46
+2022-06-15 06:27:21.449 +05:30 [INF] Application is shutting down...
+2022-06-15 06:27:21.506 +05:30 [INF] Bus stopped: "rabbitmq://localhost/"
+2022-06-15 06:28:28.542 +05:30 [INF] Now listening on: https://localhost:7088
+2022-06-15 06:28:28.579 +05:30 [INF] Now listening on: http://localhost:5088
+2022-06-15 06:28:28.583 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-15 06:28:28.585 +05:30 [INF] Hosting environment: Development
+2022-06-15 06:28:28.586 +05:30 [INF] Content root path: C:\StackRoute\DotNet\HotelListing-fork\RecommendationService\
+2022-06-15 06:28:28.629 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2022-06-15 06:28:40.386 +05:30 [ERR] R-FAULT "rabbitmq://localhost/user-send" "48060000-5043-c8f7-62a3-08da4e6a2fc0" Model.User RecommendationService.config.RabbitConfig("00:00:00.0078403")
+MassTransit.ConsumerException: Unable to resolve consumer type 'RecommendationService.config.RabbitConfig'.
+   at MassTransit.DependencyInjection.ConsumeScopeProvider.CreatedScopeContextFactory[TConsumer,T](ConsumeContext`1 consumeContext, IServiceScope serviceScope) in /_/src/MassTransit/DependencyInjection/DependencyInjection/ConsumeScopeProvider.cs:line 94
+   at MassTransit.DependencyInjection.BaseConsumeScopeProvider.GetScopeContext[TScopeContext,TPipeContext](TPipeContext context, Func`3 existingScopeContextFactory, Func`3 createdScopeContextFactory, Func`4 pipeContextFactory) in /_/src/MassTransit/DependencyInjection/DependencyInjection/BaseConsumeScopeProvider.cs:line 42
+--- End of stack trace from previous location ---
+   at MassTransit.Util.DisposeAsyncExtensions.<>c__DisplayClass1_0`1.<<DisposeAsync>g__Faulted|0>d.MoveNext() in /_/src/MassTransit/Util/DisposeAsyncExtensions.cs:line 50
+--- End of stack trace from previous location ---
+   at MassTransit.DependencyInjection.ScopeConsumerFactory`1.Send[TMessage](ConsumeContext`1 context, IPipe`1 next) in /_/src/MassTransit/DependencyInjection/DependencyInjection/ScopeConsumerFactory.cs:line 20
+   at MassTransit.Middleware.ConsumerMessageFilter`2.MassTransit.IFilter<MassTransit.ConsumeContext<TMessage>>.Send(ConsumeContext`1 context, IPipe`1 next) in /_/src/MassTransit/Middleware/ConsumerMessageFilter.cs:line 46
+2022-06-15 06:28:54.426 +05:30 [INF] Application is shutting down...
+2022-06-15 06:28:54.479 +05:30 [INF] Bus stopped: "rabbitmq://localhost/"

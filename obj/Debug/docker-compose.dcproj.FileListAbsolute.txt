@@ -1,0 +1,15 @@
+C:\StackRoute\DotNet\HotelListing-fork\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+C:\StackRoute\DotNet\HotelListing-fork\bin\Debug\appsettings.Development.json
+C:\StackRoute\DotNet\HotelListing-fork\bin\Debug\appsettings.json
+C:\StackRoute\DotNet\HotelListing-fork\bin\Debug\System.Text.Json.dll
+C:\StackRoute\DotNet\HotelListing-fork\bin\Debug\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\StackRoute\DotNet\HotelListing-fork\bin\Debug\Swashbuckle.AspNetCore.Swagger.dll
+C:\StackRoute\DotNet\HotelListing-fork\bin\Debug\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\StackRoute\DotNet\HotelListing-fork\bin\Debug\Microsoft.OpenApi.dll
+C:\StackRoute\DotNet\HotelListing-fork\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
+C:\StackRoute\DotNet\HotelListing-fork\obj\Debug\docker-compose.dcproj.CopyComplete
+C:\StackRoute\DotNet\HotelListing-fork\bin\Debug\DemoHotelListing.deps.json
+C:\StackRoute\DotNet\HotelListing-fork\bin\Debug\DemoHotelListing.runtimeconfig.json
+C:\StackRoute\DotNet\HotelListing-fork\bin\Debug\DemoHotelListing.exe
+C:\StackRoute\DotNet\HotelListing-fork\bin\Debug\DemoHotelListing.dll
+C:\StackRoute\DotNet\HotelListing-fork\bin\Debug\DemoHotelListing.pdb

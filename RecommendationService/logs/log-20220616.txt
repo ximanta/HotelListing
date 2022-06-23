@@ -1,0 +1,146 @@
+2022-06-16 05:35:11.745 +05:30 [INF] Now listening on: https://localhost:7088
+2022-06-16 05:35:11.838 +05:30 [INF] Now listening on: http://localhost:5088
+2022-06-16 05:35:11.850 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 05:35:11.855 +05:30 [INF] Hosting environment: Development
+2022-06-16 05:35:11.857 +05:30 [INF] Content root path: C:\StackRoute\DotNet\HotelListing-fork\RecommendationService\
+2022-06-16 05:35:12.448 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2022-06-16 05:38:27.719 +05:30 [INF] Application is shutting down...
+2022-06-16 05:38:27.831 +05:30 [INF] Bus stopped: "rabbitmq://localhost/"
+2022-06-16 05:39:05.453 +05:30 [INF] Now listening on: https://localhost:7088
+2022-06-16 05:39:05.533 +05:30 [INF] Now listening on: http://localhost:5088
+2022-06-16 05:39:05.541 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 05:39:05.544 +05:30 [INF] Hosting environment: Development
+2022-06-16 05:39:05.546 +05:30 [INF] Content root path: C:\StackRoute\DotNet\HotelListing-fork\RecommendationService\
+2022-06-16 05:39:05.650 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2022-06-16 05:39:50.806 +05:30 [INF] Application is shutting down...
+2022-06-16 05:39:50.920 +05:30 [INF] Bus stopped: "rabbitmq://localhost/"
+2022-06-16 05:39:57.211 +05:30 [INF] Now listening on: https://localhost:7088
+2022-06-16 05:39:57.266 +05:30 [INF] Now listening on: http://localhost:5088
+2022-06-16 05:39:57.271 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 05:39:57.272 +05:30 [INF] Hosting environment: Development
+2022-06-16 05:39:57.274 +05:30 [INF] Content root path: C:\StackRoute\DotNet\HotelListing-fork\RecommendationService\
+2022-06-16 05:39:57.342 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2022-06-16 05:40:53.367 +05:30 [INF] Application is shutting down...
+2022-06-16 05:40:53.444 +05:30 [INF] Bus stopped: "rabbitmq://localhost/"
+2022-06-16 05:41:33.760 +05:30 [INF] Now listening on: https://localhost:7088
+2022-06-16 05:41:33.850 +05:30 [INF] Now listening on: http://localhost:5088
+2022-06-16 05:41:33.857 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 05:41:33.859 +05:30 [INF] Hosting environment: Development
+2022-06-16 05:41:33.861 +05:30 [INF] Content root path: C:\StackRoute\DotNet\HotelListing-fork\RecommendationService\
+2022-06-16 05:41:33.922 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2022-06-16 05:42:30.763 +05:30 [INF] Application is shutting down...
+2022-06-16 05:42:30.876 +05:30 [INF] Bus stopped: "rabbitmq://localhost/"
+2022-06-16 05:54:48.720 +05:30 [INF] Now listening on: https://localhost:7088
+2022-06-16 05:54:48.815 +05:30 [INF] Now listening on: http://localhost:5088
+2022-06-16 05:54:48.825 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 05:54:48.828 +05:30 [INF] Hosting environment: Development
+2022-06-16 05:54:48.832 +05:30 [INF] Content root path: C:\StackRoute\DotNet\HotelListing-fork\RecommendationService\
+2022-06-16 05:54:48.914 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2022-06-16 05:56:42.477 +05:30 [INF] Application is shutting down...
+2022-06-16 05:56:42.585 +05:30 [INF] Bus stopped: "rabbitmq://localhost/"
+2022-06-16 05:56:48.560 +05:30 [INF] Now listening on: https://localhost:7088
+2022-06-16 05:56:48.622 +05:30 [INF] Now listening on: http://localhost:5088
+2022-06-16 05:56:48.627 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 05:56:48.628 +05:30 [INF] Hosting environment: Development
+2022-06-16 05:56:48.630 +05:30 [INF] Content root path: C:\StackRoute\DotNet\HotelListing-fork\RecommendationService\
+2022-06-16 05:56:48.705 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2022-06-16 05:58:20.432 +05:30 [INF] Application is shutting down...
+2022-06-16 05:58:20.564 +05:30 [INF] Bus stopped: "rabbitmq://localhost/"
+2022-06-16 06:04:33.251 +05:30 [INF] Now listening on: https://localhost:7088
+2022-06-16 06:04:33.429 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2022-06-16 06:04:33.452 +05:30 [INF] Now listening on: http://localhost:5088
+2022-06-16 06:04:33.457 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 06:04:33.462 +05:30 [INF] Hosting environment: Development
+2022-06-16 06:04:33.467 +05:30 [INF] Content root path: C:\StackRoute\DotNet\HotelListing-fork\RecommendationService\
+2022-06-16 06:05:28.106 +05:30 [INF] Application is shutting down...
+2022-06-16 06:05:28.191 +05:30 [INF] Bus stopped: "rabbitmq://localhost/"
+2022-06-16 06:08:10.027 +05:30 [INF] Now listening on: https://localhost:7088
+2022-06-16 06:08:10.119 +05:30 [INF] Now listening on: http://localhost:5088
+2022-06-16 06:08:10.127 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 06:08:10.129 +05:30 [INF] Hosting environment: Development
+2022-06-16 06:08:10.132 +05:30 [INF] Content root path: C:\StackRoute\DotNet\HotelListing-fork\RecommendationService\
+2022-06-16 06:08:10.210 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2022-06-16 06:08:27.476 +05:30 [INF] Application is shutting down...
+2022-06-16 06:08:27.578 +05:30 [INF] Bus stopped: "rabbitmq://localhost/"
+2022-06-16 07:22:22.103 +05:30 [INF] Now listening on: https://localhost:7088
+2022-06-16 07:22:22.136 +05:30 [INF] Now listening on: http://localhost:5088
+2022-06-16 07:22:22.140 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 07:22:22.141 +05:30 [INF] Hosting environment: Development
+2022-06-16 07:22:22.142 +05:30 [INF] Content root path: C:\StackRoute\DotNet\HotelListing-fork\RecommendationService\
+2022-06-16 07:22:22.172 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2022-06-16 07:34:57.123 +05:30 [INF] Application is shutting down...
+2022-06-16 07:34:57.175 +05:30 [INF] Bus stopped: "rabbitmq://localhost/"
+2022-06-16 07:51:44.348 +05:30 [INF] Now listening on: https://localhost:7088
+2022-06-16 07:51:44.380 +05:30 [INF] Now listening on: http://localhost:5088
+2022-06-16 07:51:44.384 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 07:51:44.386 +05:30 [INF] Hosting environment: Development
+2022-06-16 07:51:44.387 +05:30 [INF] Content root path: C:\StackRoute\DotNet\HotelListing-fork\RecommendationService\
+2022-06-16 07:51:44.428 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2022-06-16 07:53:25.205 +05:30 [INF] Application is shutting down...
+2022-06-16 07:53:25.261 +05:30 [INF] Bus stopped: "rabbitmq://localhost/"
+2022-06-16 07:53:33.638 +05:30 [INF] Now listening on: https://localhost:7088
+2022-06-16 07:53:33.672 +05:30 [INF] Now listening on: http://localhost:5088
+2022-06-16 07:53:33.676 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 07:53:33.678 +05:30 [INF] Hosting environment: Development
+2022-06-16 07:53:33.679 +05:30 [INF] Content root path: C:\StackRoute\DotNet\HotelListing-fork\RecommendationService\
+2022-06-16 07:53:33.704 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2022-06-16 08:08:51.460 +05:30 [INF] Application is shutting down...
+2022-06-16 08:08:51.511 +05:30 [INF] Bus stopped: "rabbitmq://localhost/"
+2022-06-16 10:10:58.115 +05:30 [INF] Now listening on: https://localhost:7088
+2022-06-16 10:10:58.162 +05:30 [INF] Now listening on: http://localhost:5088
+2022-06-16 10:10:58.167 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 10:10:58.168 +05:30 [INF] Hosting environment: Development
+2022-06-16 10:10:58.170 +05:30 [INF] Content root path: C:\StackRoute\DotNet\HotelListing-fork\RecommendationService\
+2022-06-16 10:10:58.231 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2022-06-16 10:11:05.111 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'RecommendationService.Services.ICountryService' while attempting to activate 'RecommendationService.Controllers.CountryController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method10(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-16 10:11:33.964 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'RecommendationService.Services.ICountryService' while attempting to activate 'RecommendationService.Controllers.CountryController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method12(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-16 10:11:53.668 +05:30 [INF] Application is shutting down...
+2022-06-16 10:11:53.732 +05:30 [INF] Bus stopped: "rabbitmq://localhost/"
+2022-06-16 10:14:59.957 +05:30 [INF] Now listening on: https://localhost:7088
+2022-06-16 10:14:59.992 +05:30 [INF] Now listening on: http://localhost:5088
+2022-06-16 10:14:59.997 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 10:14:59.999 +05:30 [INF] Hosting environment: Development
+2022-06-16 10:15:00.000 +05:30 [INF] Content root path: C:\StackRoute\DotNet\HotelListing-fork\RecommendationService\
+2022-06-16 10:15:00.031 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2022-06-16 10:15:35.191 +05:30 [INF] Application is shutting down...
+2022-06-16 10:15:35.247 +05:30 [INF] Bus stopped: "rabbitmq://localhost/"
+2022-06-16 10:28:06.443 +05:30 [INF] Now listening on: https://localhost:7088
+2022-06-16 10:28:06.477 +05:30 [INF] Now listening on: http://localhost:5088
+2022-06-16 10:28:06.482 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 10:28:06.484 +05:30 [INF] Hosting environment: Development
+2022-06-16 10:28:06.485 +05:30 [INF] Content root path: C:\StackRoute\DotNet\HotelListing-fork\RecommendationService\
+2022-06-16 10:28:06.515 +05:30 [INF] Bus started: "rabbitmq://localhost/"
+2022-06-16 10:31:34.442 +05:30 [INF] Application is shutting down...
+2022-06-16 10:31:34.506 +05:30 [INF] Bus stopped: "rabbitmq://localhost/"

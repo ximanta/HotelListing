@@ -2,13 +2,15 @@
 
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
 WORKDIR /app
-EXPOSE 8080
+EXPOSE 80
+EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["FeedbackService.csproj", "./"]
-RUN dotnet restore "FeedbackService.csproj"
+COPY ["FeedbackService/FeedbackService.csproj", "FeedbackService/"]
+RUN dotnet restore "FeedbackService/FeedbackService.csproj"
 COPY . .
+WORKDIR "/src/FeedbackService"
 RUN dotnet build "FeedbackService.csproj" -c Release -o /app/build
 
 FROM build AS publish

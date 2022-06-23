@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "2eOEgVyGyVLX4+2U77EMC4R/C0nqS5UvTDlLpFq0DnTlXShIVIooM8p0TVHWGrszYx6qhPqfBgQ0Tt0xPjiCww==",
+  "success": true,
+  "projectFilePath": "C:\\StackRoute\\DotNet\\HotelListing-fork\\Campaign\\Campaign.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Prashanth P\\.nuget\\packages\\dnsclient\\1.6.0\\dnsclient.1.6.0.nupkg.sha512",
+    "C:\\Users\\Prashanth P\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\Prashanth P\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
+    "C:\\Users\\Prashanth P\\.nuget\\packages\\mongodb.bson\\2.16.0\\mongodb.bson.2.16.0.nupkg.sha512",
+    "C:\\Users\\Prashanth P\\.nuget\\packages\\mongodb.driver\\2.16.0\\mongodb.driver.2.16.0.nupkg.sha512",
+    "C:\\Users\\Prashanth P\\.nuget\\packages\\mongodb.driver.core\\2.16.0\\mongodb.driver.core.2.16.0.nupkg.sha512",
+    "C:\\Users\\Prashanth P\\.nuget\\packages\\mongodb.libmongocrypt\\1.5.2\\mongodb.libmongocrypt.1.5.2.nupkg.sha512",
+    "C:\\Users\\Prashanth P\\.nuget\\packages\\sharpcompress\\0.30.1\\sharpcompress.0.30.1.nupkg.sha512",
+    "C:\\Users\\Prashanth P\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\Prashanth P\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "C:\\Users\\Prashanth P\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "C:\\Users\\Prashanth P\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
