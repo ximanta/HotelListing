@@ -18,7 +18,9 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Restore dependencies
-      run: cd HotelListing.API | dotnet restore
+      run: |
+        cd HotelListing.API
+        dotnet restore
     - name: Build
       run: dotnet build --no-restore
     - name: Test
